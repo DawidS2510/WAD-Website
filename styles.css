@@ -1,5 +1,5 @@
 body {
-    font-family: Garamond, serif;
+    font-family: Arial, Helvetica, sans-serif, serif;
     background-color: #f4f4f4;
     margin: 0;
     padding: 1px;
@@ -29,8 +29,9 @@ text-align: center;
   }
 
   .profile-img {
-    width: 190px;
-    height: 200px;
+    width: 12rem;
+    height: auto;
+    max-width: 100%;
   }
 
   .manutd-link {
@@ -50,10 +51,29 @@ text-align: center;
   font-size: 1.1em;
   }
 
-  nav a:hover {
+  nav a:hover, nav a:focus {
     background-color: #555;
     color: #fff;
-    border-radius: 5px; /* Optional: rounded corners */
+    border-radius: 5px;
+    outline: none;
   }
 
+  #football-container {
+    position: relative;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+  }
+  
+  
+  #football {
+    position: absolute;
+    width: 100px;
+    height: 80px;
+    background-image: url('football PNG.jpg'); /* Make sure to add a football image to your project */
+    background-size: cover;
+    border-radius: 50%;
+  }
+  
+ 
   
