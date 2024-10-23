@@ -2,7 +2,7 @@ body {
     font-family: Arial, Helvetica, sans-serif, serif;
     background-color: #f4f4f4;
     margin: 0;
-    padding: 1px;
+    padding: 0;
     color: #000000;
 }
 
@@ -15,11 +15,11 @@ header {
     position: sticky;
     top: 0;
     z-index: 1000; /* Ensure it stays above other elements */
-    width: 100%; /* Ensure it spans the full width of the page */
+    width: 96%; /* Ensure it spans the full width of the page */
   }
 
 footer {
-position: sticky;
+position: fixed;
 left: 0;
 bottom: 0;
 width: 100%;
@@ -170,3 +170,12 @@ text-align: center;
     color: #66d9ff;
   }
   
+  .contact-page footer {
+    position: sticky;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #66d9ff;
+    color: white;
+    text-align: center;
+  }
