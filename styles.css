@@ -128,4 +128,45 @@ text-align: center;
   button[type="submit"]:hover {
     background-color: #33ccff;
   }
+
+  #contact-info {
+    max-width: 500px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+  
+  #contact-info h2 {
+    text-align: center;
+    color: #333;
+  }
+  
+  #contact-info ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  #contact-info li {
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  #contact-info i {
+    margin-right: 1rem;
+    color: #66d9ff;
+    font-size: 1.2rem;
+  }
+  
+  #contact-info a {
+    color: #333;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  #contact-info a:hover {
+    color: #66d9ff;
+  }
   
