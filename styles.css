@@ -38,29 +38,6 @@ footer {
     box-sizing: border-box;
   }
 
-  footer a {
-    color: white;
-    text-decoration: none;
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-}
-
-footer i {
-    font-size: 1.2rem;
-}
-
-/* Responsive adjustments */
-@media screen and (max-width: 768px) {
-    main {
-        margin-bottom: 80px;
-    }
-    
-    footer {
-        padding: 0.8rem;
-    }
-}
-
   .profile-img {
     width: 12rem;
     height: auto;
