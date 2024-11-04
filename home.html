@@ -30,33 +30,64 @@
 <title>Dawid Sadowski | Page Home</title>
 
 </head>
-<body>
+<body class="home-page">
+  <div class="page-background"></div>
   <header>
       <nav>
-    <!-- ... navigation links ... -->
-        <a href="home.html" class="active">Home</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-        <a href="skills.html">Skills </a>
+        <div class="menu-icon">
+            <i class="fas fa-bars"></i>
+        </div>
+        <div class="nav-links">
+            <a href="home.html" class="active">Home</a>
+            <a href="about.html">About</a>
+            <a href="skills.html">Skills</a>
+            <a href="contact.html">Contact</a>
+        </div>
     </nav>
 </header>   
   
   <main role="main">
-    <h1>Dawid Sadowski Page</h1>
-    <h2>Welcome to my page!</h2>
-    <img src="IMG_E6552.JPG" alt="Dawid Sadowski" class="profile-img">
-    <p>I am a second year student at Salford University studying Business Management with Innovation and Technology. You can explore more about my skills, experiences and how to get in contact with me in the menu above.</p>
-    <div id="football-container">
-      <div id="football"></div>
-    </div>
+    <section class="hero">
+        <div class="hero-content">
+            <img src="IMG_E6552.JPG" alt="Dawid Sadowski" class="profile-img">
+            <h1>Dawid Sadowski</h1>
+            <div class="typed-text">
+                <span id="typed"></span>
+            </div>
+        </div>
+    </section>
+
+    <section class="introduction">
+        <div class="container">
+            <h2>Welcome to my Portfolio</h2>
+            <p>I am a second-year student at Salford University studying Business Management with Innovation and Technology. My interests include:</p>
+            <div class="interests-grid">
+                <div class="interest-item">
+                    <i class="fas fa-business-time"></i>
+                    <span>Business</span>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <span>Technology</span>
+                </div>
+                <div class="interest-item">
+                    <i class="fas fa-futbol"></i>
+                    <span>Football</span>
+                </div>
+            </div>
+        </div>
+    </section>
   </main>
 
   
      <footer>
-    <!-- ... footer content ... -->
-        <a href="https://www.linkedin.com/in/dawid-sadowski-4063a2295/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-         <i class="fa-brands fa-linkedin"></i>
+    <nav>
+        <a href="https://www.linkedin.com/in/dawid-sadowski-4063a2295/" target="_blank" rel="noopener noreferrer">
+            <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+            <span>LinkedIn</span>
+        </a>
+    </nav>
     <p>&copy; 2024 Dawid Sadowski Website</p>
-     </footer>
+</footer>
 </body>
 </html>
