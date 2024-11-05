@@ -31,6 +31,20 @@ header {
 }
 
 /* Navigation Styles */
+nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 1rem;
+    position: relative;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
 nav a {
     transition: color 0.3s ease, background-color 0.3s ease;
     color: white;
@@ -344,6 +358,30 @@ button[type="submit"] {
     .page-background {
         opacity: 0.2;
         background-size: 30px 30px;
+    }
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .menu-icon {
+        display: block;
+        position: absolute;
+        left: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 2;
+    }
+
+    .nav-links {
+        display: none;
+        width: 100%;
+        text-align: center;
+        padding-top: 1rem;
+    }
+
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
     }
 }
   
