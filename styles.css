@@ -72,9 +72,21 @@ footer {
     background-color: #66d9ff;
     color: white;
     text-align: center;
-    padding: 1rem;
+    padding: 1 rem;
     width: 100%;
     box-sizing: border-box;
+    min-height: 80px;
+    height: auto;
+}
+
+footer nav {
+    justify-content: center;
+    margin: 0;
+    padding: 5px 0;
+}
+
+footer p {
+    margin: 0;
 }
 
 /* Home Page Styles */
@@ -383,6 +395,56 @@ button[type="submit"] {
         display: flex;
         flex-direction: column;
     }
+}
+
+/* Better mobile spacing */
+@media (max-width: 768px) {
+    .skills-grid, .about-container {
+        padding: 1rem;
+        gap: 1.5rem;
+    }
+
+    .page-title {
+        font-size: 2rem;
+        margin: 1rem 0;
+    }
+}
+
+/* Smooth transitions for links */
+.nav-links a {
+    transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-links a:hover {
+    transform: translateY(-2px);
+    color: #66d9ff;
+}
+
+/* Card hover effects */
+.skills-card, .about-section {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-card:hover, .about-section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+}
+
+/* Smooth icon animations */
+.skills-list i {
+    transition: transform 0.3s ease;
+}
+
+.skills-list li:hover i {
+    transform: scale(1.2);
+    color: #66d9ff;
+}
+
+/* Section dividers */
+.about-section, .skills-card {
+    border-bottom: 2px solid rgba(102, 217, 255, 0.1);
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
 }
   
   
