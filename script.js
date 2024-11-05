@@ -1,25 +1,28 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Typed.js initialization
-    const typed = new Typed('#typed', {
-        strings: [
-            'Business Management Student',
-            'Technology Enthusiast',
-            'Football Fan',
-            'Based in Manchester'
-        ],
-        typeSpeed: 50,
-        backSpeed: 30,
-        loop: true,
-        backDelay: 1500
-    });
-
-    // Mobile menu functionality
+    // Hamburger menu functionality (will work on all pages)
     const menuIcon = document.querySelector('.menu-icon');
     const navLinks = document.querySelector('.nav-links');
 
-    if (menuIcon) {
+    if (menuIcon && navLinks) {
         menuIcon.addEventListener('click', function() {
             navLinks.classList.toggle('active');
+        });
+    }
+
+    // Typed.js initialization (only for home page)
+    const typedElement = document.getElementById('typed');
+    if (typedElement) {
+        const typed = new Typed('#typed', {
+            strings: [
+                'Business Management Student',
+                'Technology Enthusiast',
+                'Football Fan',
+                'Based in Manchester'
+            ],
+            typeSpeed: 50,
+            backSpeed: 30,
+            backDelay: 1500,
+            loop: true
         });
     }
 });
